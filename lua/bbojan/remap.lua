@@ -1,7 +1,7 @@
 local options = { noremap = true }
 
-vim.keymap.set("i", "kg", "<Esc>", options)
 vim.g.mapleader = " "
+vim.keymap.set("i", "kj", "<Esc>", options)
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
