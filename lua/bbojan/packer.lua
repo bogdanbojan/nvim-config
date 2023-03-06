@@ -27,6 +27,7 @@ use('nvim-treesitter/playground')
 use('ThePrimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use('christoomey/vim-tmux-navigator')
 
 use {
   'VonHeikemen/lsp-zero.nvim',
