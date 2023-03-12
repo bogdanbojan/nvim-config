@@ -28,6 +28,9 @@ use('ThePrimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
 use('christoomey/vim-tmux-navigator')
+use('szw/vim-maximizer')
+use('tpope/vim-surround')
+use('vim-scripts/ReplaceWithRegister')
 
 use {
   'VonHeikemen/lsp-zero.nvim',
