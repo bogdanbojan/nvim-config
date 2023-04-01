@@ -33,6 +33,7 @@ use('tpope/vim-surround')
 use('vim-scripts/ReplaceWithRegister')
 use('Olical/conjure')
 use('wlangstroth/vim-racket')
+use('gpanders/nvim-parinfer') 
 
 use {
   'VonHeikemen/lsp-zero.nvim',
