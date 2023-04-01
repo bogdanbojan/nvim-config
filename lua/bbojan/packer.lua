@@ -31,6 +31,8 @@ use('christoomey/vim-tmux-navigator')
 use('szw/vim-maximizer')
 use('tpope/vim-surround')
 use('vim-scripts/ReplaceWithRegister')
+use('Olical/conjure')
+use('wlangstroth/vim-racket')
 
 use {
   'VonHeikemen/lsp-zero.nvim',
