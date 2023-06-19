@@ -13,13 +13,28 @@ use {
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
-use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-        require("rose-pine").setup()
-        vim.cmd('colorscheme rose-pine')
-    end
+-- use({
+--     'rose-pine/neovim',
+--     as = 'rose-pine',
+--     config = function()
+--         require("rose-pine").setup()
+--         vim.cmd('colorscheme rose-pine')
+--     end
+-- })
+
+-- use({'mcchrish/zenbones.nvim',
+--      as = 'zenbones',
+--      requires = "rktjmp/lush.nvim",
+--      config = function()
+--         vim.cmd('colorscheme tokyobones')
+--      end
+-- })
+ 
+use({'cocopon/iceberg.vim',
+     as = 'iceberg',
+     config = function()
+        vim.cmd('colorscheme iceberg')
+     end
 })
 
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -59,12 +74,11 @@ use {
 }
 
 -- install without yarn or npm
-use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-})
+-- use({
+--     "iamcco/markdown-preview.nvim",
+--     run = function() vim.fn["mkdp#util#install"]() end,
+-- })
 
 use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
 
 end)
